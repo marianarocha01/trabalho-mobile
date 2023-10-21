@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag responsiva -->
+    <title>Um pouco sobre mim</title>
+    <style>
+        body {
+            background-color: lightpink;
+            font-size: 16px; /* Tamanho da fonte base */
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: deeppink;
+        }
+        p {
+            text-align: center;
+            color: whitesmoke;
+			font-family: Arial, sans-serif; /* Fonte para o corpo do documento */
+       
+        }
+        h2 {
+            text-align: center;
+            color: hotpink;
+        }
+        form {
+            text-align: center;
+            color: whitesmoke;
+        }
+        img {
+            max-width: 100%; /* Imagens responsivas */
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            /* Estilos para telas menores (exemplo: smartphones) */
+            body {
+                font-size: 14px; /* Reduza o tamanho da fonte para telas menores */
+            }
+            h1, h2 {
+                font-size: 24px; /* Reduza o tamanho dos títulos */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Um pouco sobre mim</h1>
+    <p>Olá, eu sou a Mariana Rocha.</p>
+    <p>Tenho 19 anos e estou a tirar a licenciatura de Comunicação Audiovisual e Multimédia.</p>
+    <p>No secundário tirei um curso profissional técnico Audiovisual e desde aí que percebi que queria fazer isto do meu futuro.</p>
+    <h2>Fotografia ou Vídeo?</h2>
+	
+	<div style="text-align: center;"> <!-- para centralizar as duas imagens-->
+    <img src="https://cdn-icons-png.flaticon.com/512/1942/1942191.png" alt="câmara fotográfica" 
+         height="200px"
+         width="200px"
+		 style="margin-right: 40px;"> <!-- codigo para meter uma imagem e alterar as suas dimensoes\altura e largura--> <!-- ALT-Descrição da imagem -->
+	
+	  <img src="https://cdn-icons-png.flaticon.com/512/4697/4697431.png" alt="câmara de vídeo" 
+         height="200px"
+         width="200px"
+		   style="margin-left: 40px;">
+	</div>
+	
+    <form>
+        <label for="selecao"><b>O que preferes:</b></label>
+        <input type="checkbox" id="video" name="video"> Vídeo
+        <input type="checkbox" id="fotografia" name="fotografia"> Fotografia
+        <br>
+        <label for="atividade"><b>Um hobby teu:</b></label>
+        <input type="text" id="atividade" name="atividade">
+    </form>
+</body>
+</html>
